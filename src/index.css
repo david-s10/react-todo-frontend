@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url(https://fonts.googleapis.com/css?family=Fredoka:300,regular,500,600,700);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  html,body {
+    height: 100%;
+    font-family: Fredoka;
+  }
+  #root {
+    height: 100%;
+  }
+  .form-wrapper {
+    background: url('./images/bg.jpg')no-repeat center;
+    background-size: cover;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  .pop-up {
+    background: url('./images/bg.jpg')no-repeat center;
+    background-size: cover;
+  }
+
 }
